@@ -1,0 +1,122 @@
+.chat-popup {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 400px;
+  max-height: 600px; /* Reduced height to make it more compact */
+  background-color: #fdfdfd; /* Softer background color */
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  font-family: 'Arial', sans-serif;
+  border: 1px solid #e0e0e0; /* Adds a subtle border */
+  overflow: hidden; /* Ensures content stays inside */
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.chat-header .header-icon {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.chat-header .clear-chat-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.chat-header .clear-chat-button:hover {
+  color: #ffcccc; /* Slight hover effect */
+}
+
+.chat-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between sections */
+  overflow: hidden; /* Prevents unnecessary scrolling */
+}
+
+.chat-questions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between buttons */
+}
+
+.chat-button-option {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.chat-button-option:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.chat-answer {
+  background-color: #f9f9f9;
+  color: #333;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+  font-weight: 500;
+}
+
+.chat-footer {
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Add professional hover effect to clear chat button */
+.chat-clear-footer {
+  background-color: #f5f5f5;
+  border-top: 1px solid #e0e0e0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.chat-clear-footer .clear-chat-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.chat-clear-footer .clear-chat-button:hover {
+  background-color: #c0392b;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}

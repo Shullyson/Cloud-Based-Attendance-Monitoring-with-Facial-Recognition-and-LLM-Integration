@@ -1,0 +1,20 @@
+version: "2.0"
+nlu:
+  - intent: greet
+    examples: |
+     - Hello
+
+  - intent: ask_suggestion
+    examples: |
+      - I need help
+      - I have a question
+      - What can you help me with?
+      - I need some assistance
+
+  - intent: question_1
+    examples: |
+      - What is service ?
+      - Can you tell me about this service?
+      - Describe this service to me
+
+ 

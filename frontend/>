@@ -1,0 +1,16 @@
+import 'src/global.css';
+import { Route, Routes } from 'react-router-dom';
+import Homepage from 'src/pages/homepage'; // Main page component
+import AdminPage from 'src/routes/sections'; // Admin page component served by sections.jsx
+import ThemeProvider from 'src/theme';
+
+export default function App() {
+  return (
+    <ThemeProvider>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/admin" element={<AdminPage />} />
+      </Routes>
+    </ThemeProvider>
+  );
+}

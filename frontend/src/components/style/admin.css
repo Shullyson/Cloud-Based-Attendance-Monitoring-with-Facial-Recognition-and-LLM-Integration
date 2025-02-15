@@ -1,0 +1,757 @@
+
+.title{
+    color:white;
+  
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .adminlogout {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #07638b;
+    border: 1px solid #0f2027;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 90px;
+    right: 180px;
+  }
+  
+  .adminlogout:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  
+  .admin-container {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    /* background-image: url('../images/app.jpg');  */
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    opacity: 0.9; 
+    z-index: -10; 
+  
+  
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+  }
+  
+  
+    .admin-buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    
+    
+    .admin-report-button button {
+      margin-top: 30px;
+      width: 400px;
+      height: 120px;
+      background-color: #0f2027;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 8px;
+    }
+  
+    .admin-report-button button:hover {
+      background-color: #0056b3;
+    }
+  
+    .admin-buttons button {
+      width: 500px;
+      height: 200px;
+      background-color: #07638b;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 8px;
+    }
+    
+    .admin-buttons button:hover {
+      background-color: #0056b3;
+    }
+    
+    .admin-section {
+      margin-top: 20px;
+    }
+    
+    .admin-section h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    
+    .admin-section ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .admin-section li {
+      background: #f4f4f4;
+      margin: 5px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }  
+  .admin-title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: whitesmoke;
+    }
+  
+  
+    /* Modals CSS */
+  
+    /* Courses.Css */
+    /* src/components/courses.css */
+  
+  .courses-container {
+    margin: 10px;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .courses-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  .form-container {
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .courses-list {
+    max-height: 300px; /* Adjust height as needed */
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    list-style: none;
+  }
+  
+  .form-container input {
+    margin-right: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+    width: 70%;
+  }
+  
+  .form-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    align-self: right;
+    cursor: pointer;
+    flex: 0;
+    width: 70%;
+  }
+  
+  .form-container select {
+    margin-right: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+    width: 90%;
+  }
+  
+  .form-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .courses-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .courses-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .courses-list span {
+    flex: 1;
+  }
+  
+  .courses-list button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .courses-list button:hover {
+    background-color: #c82333;
+  }
+  
+  .courses-list button:first-child {
+    background-color: #28a745;
+  }
+  
+  .courses-list button:first-child:hover {
+    background-color: #218838;
+  }
+  
+  .modal-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 200px; 
+  }
+  
+  .button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button-container button:first-child {
+    margin-right: 10px;
+  }
+  
+  /* ManagePrograms.css */
+  
+  .programs-container {
+    margin: 10px;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .programs-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  
+  .form-container > * {
+    margin-bottom: 10px; 
+    width: 100%; 
+  }
+  
+  .form-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto; 
+  }
+  
+  .form-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .programs-list {
+    max-height: 300px; 
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    list-style: none;
+  }
+  
+  .programs-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .programs-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .programs-list span {
+    flex: 1;
+  }
+  
+  .programs-list button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .programs-list button:hover {
+    background-color: #c82333;
+  }
+  
+  /* ManageStudents.css */
+  
+  .students-container {
+    margin: 10px;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .students-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  
+  .form-container > * {
+    margin-bottom: 10px; 
+    width: 100%; 
+  }
+  
+  .form-container input[type="text"],
+  .form-container input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto; 
+  }
+  
+  .form-container select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; 
+  }
+  
+  .form-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .students-list {
+    max-height: 300px; 
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    list-style: none;
+  }
+  
+  .students-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .students-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .students-list span {
+    flex: 3;
+  }
+  
+  .students-list button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .students-list button:hover {
+    background-color: #c82333;
+  }  
+  
+  /* Modal.css */
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-main {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .display-block {
+    display: flex;
+  }
+  
+  .display-none {
+    display: none;
+  }  
+  
+  /* Professor.css */
+  
+  
+  .professors-container {
+    margin: 10px;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .professors-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  .form-container {
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .professors-list {
+    max-height: 300px; 
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    list-style: none;
+  }
+  
+  .form-container input {
+    margin-right: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+    width: 70%;
+  }
+  
+  .form-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    align-self: right;
+    cursor: pointer;
+    flex: 0;
+    width: 70%;
+  }
+  
+  .form-container select {
+    margin-right: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+    width: 90%;
+  }
+  
+  .form-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .professors-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .professors-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .professors-list span {
+    flex: 1;
+  }
+  
+  .professors-list button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .professors-list button:hover {
+    background-color: #c82333;
+  }
+  
+  .professors-list button:first-child {
+    background-color: #28a745;
+  }
+  
+  .professors-list button:first-child:hover {
+    background-color: #218838;
+  }
+  
+  .modal-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 200px; 
+  }
+  
+  .button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button-container button:first-child {
+    margin-right: 10px;
+  }
+
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .display-block {
+    display: flex;
+  }
+  
+  .display-none {
+    display: none;
+  }
+  
+  .modal-main {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+ 
+  
+  .chat-popup {
+    position: fixed;
+    bottom: 150px;
+    right: 20px;
+    width: 400px;
+    max-height: 900px; /* Reduced height to make it more compact */
+    background-color: #fdfdfd; /* Softer background color */
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #e0e0e0; /* Adds a subtle border */
+    overflow: hidden; /* Ensures content stays inside */
+  }
+  
+  .chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .chat-header .header-icon {
+    margin-right: 10px;
+    font-size: 24px;
+  }
+  
+  .chat-header .clear-chat-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .chat-header .clear-chat-button:hover {
+    color: #ffcccc; /* Slight hover effect */
+  }
+  
+  .chat-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between sections */
+    overflow: hidden; /* Prevents unnecessary scrolling */
+  }
+  
+  .chat-questions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .chat-button-option {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .chat-button-option:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chat-answer {
+    background-color: #f9f9f9;
+    color: #333;
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+    line-height: 1.6;
+    word-wrap: break-word;
+    font-weight: 500;
+  }
+  
+  .chat-footer {
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  /* Add professional hover effect to clear chat button */
+  .chat-clear-footer {
+    background-color: #f5f5f5;
+    border-top: 1px solid #e0e0e0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .chat-clear-footer .clear-chat-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .chat-clear-footer .clear-chat-button:hover {
+    background-color: #210ce1;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  

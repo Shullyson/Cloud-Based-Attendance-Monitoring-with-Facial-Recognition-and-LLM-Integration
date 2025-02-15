@@ -1,0 +1,321 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_suggestion
+  - faq_about_service
+  - faq_login
+  - faq_forgot_password
+  - faq_roles
+  - faq_error_login
+  - faq_change_role
+  - faq_something_else
+  - question_1
+  - manage_professors_students_courses
+  - bulk_add_entries
+  - file_format_bulk_upload
+  - customize_permissions
+  - handle_invalid_data
+  - admin_dashboard_features
+  - faq_login_student_dashboard
+  - faq_view_attendance_records
+  - faq_attendance_status_meaning
+  - faq_verify_attendance_status
+  - faq_update_attendance_status
+  - faq_missing_attendance_records
+  - faq_join_session_late
+  - faq_start_face_recognition
+  - faq_camera_feed_not_showing
+  - faq_face_recognition_process
+  - faq_stop_face_recognition
+  - faq_update_attendance
+  - faq_view_attendance_reports
+  - faq_missing_student_name
+  - faq_report_page_purpose
+  - faq_select_criteria
+  - faq_report_information
+  - faq_download_pdf
+  - faq_view_all_students_report
+  - faq_statistics_explanation
+ 
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+      buttons:
+        - title: "What are some questions I can ask?"
+          payload: "/suggest_questions"
+
+  utter_suggest_questions:
+    - text: "Here are some questions you can ask:"
+      buttons:
+        - title: "What is the service all about?"
+          payload: "/faq_about_service"  
+        - title: "How do I log in to the system?"
+          payload: "/faq_login"
+        - title: "I forgot my password. What should I do?"
+          payload: "/faq_forgot_password"
+        - title: "Which roles have access to the system?"
+          payload: "/faq_roles"
+        - title: "What should I do if I encounter an error during login?"
+          payload: "/faq_error_login"
+        - title: "Can I change my role after logging in?"
+          payload: "/faq_change_role"
+        - title: "Something Else?"
+          payload: "/faq_something_else"
+        - title: "How do I manage professors, students, courses, or programs?"
+          payload: "/manage_professors_students_courses" 
+        - title: "How can I add multiple professors, students, courses, or programs at once?"
+          payload: "/bulk_add_entries"  
+        - title: "What file format should I use for bulk uploads?"
+          payload: "/file_formart-bulk_upload"
+        - title: "How do I customize permissions for professors or users?"
+          payload: "/customize_permissions"  
+        - title: "What happens if I upload invalid data?"
+          payload: "/handle_invalid_data"    
+        - title: "What can I do in the admin dashboard?"
+          payload: "/admin_dashboard_features"
+        - title: "How do I log in to the Student Dashboard?"
+          payload: "/faq_login_student_dashboard"
+        - title: "How do I view my attendance records?"
+          payload: "/faq_view_attendance_records"
+        - title: "What does each attendance status mean?"
+          payload: "/faq_attendance_status_meaning"
+        - title: "How do I know if my attendance has been marked correctly?"
+          payload: "/faq_verify_attendance_status"
+        - title: "Can I update my attendance status if it’s incorrect?"
+          payload: "/faq_update_attendance_status"
+        - title: "Why can’t I see my attendance records for a course?"
+          payload: "/faq_missing_attendance_records"
+        - title: "What happens if I join the session late?"
+          payload: "/faq_join_session_late"  
+
+
+        - title: "How do I start a face recognition session?"
+          payload: "/faq_start_face_recognition"
+        - title: "Why is the camera feed not showing?"
+          payload: "/faq_camera_feed_not_showing"
+        - title: "What happens during a face recognition session?"
+          payload: "/faq_face_recognition_process"
+        - title: "How do I stop a face recognition session?"
+          payload: "/faq_stop_face_recognition"
+        - title: "Can I manually update a student’s attendance?"
+          payload: "/faq_update_attendance"
+        - title: "How do I view attendance reports?"
+          payload: "/faq_view_attendance_reports"
+        - title: "What should I do if a student’s name is not appearing in the list?"
+          payload: "/faq_missing_student_name" 
+
+
+        - title: "What is the purpose of the Report Page?"
+          payload: "/faq_report_page_purpose"
+        - title: "How do I select an academic year, course, and student for a report?"
+          payload: "/faq_select_criteria"
+        - title: "What information is included in the attendance report?"
+          payload: "/faq_report_information"
+        - title: "How do I download a PDF report?"
+          payload: "/faq_download_pdf"
+        - title: "Can I view a report for all students in a course?"
+          payload: "/faq_view_all_students_report"
+        - title: "What do the statistics at the bottom of the page represent?"
+          payload: "/faq_statistics_explanation"
+
+        
+
+  utter_faq_about_service:
+    - text: "We offer various services, including system administration, user support, and role-based access control."
+
+  utter_faq_login:
+    - text: "To log in, enter your username and password, select your role (Admin, Professor, or Student), and press 'Login'."
+
+  utter_faq_forgot_password:
+    - text: "If you forgot your password, please contact the system administrator or support team for assistance in resetting it."
+
+  utter_faq_roles:
+    - text: "The system has three roles: Admin, Professor, and Student. Each role has different levels of access and functionality."
+
+  utter_faq_error_login:
+    - text: "If you encounter a login error, check your username, password, and selected role. If the issue persists, please contact support."
+
+  utter_faq_change_role:
+    - text: "To change your role, you need to log out and select the correct role before logging back in."
+    
+  utter_something_else:
+  - text: "For Something else you can contact DRACO: <a href='https://myvirtualassistant.fr/' target='_blank'>Click here</a>"
+
+
+  utter_question_1:
+    - text: "What is the purpose of the system?"
+  
+  utter_manage_professors_students_courses:
+    - text: |
+        To manage professors, students, courses, or programs:
+        1. Click the respective "Manage" button (e.g., Manage Professors, Manage Programs, etc.).
+        2. Use the modal that opens to:
+            - View the list of existing entries.
+            - Add a new entry by filling in the required details (e.g., name, password, or program name).
+            - Edit existing entries.
+            - Delete unwanted entries.
+        Changes are saved and updated in real time.
+
+  utter_bulk_add_entries:
+    - text: |
+        To add multiple professors, students, courses, or programs at once:
+        1. Click the respective "Bulk Add" button (e.g., Bulk Add Professors, Bulk Add Programs, etc.).
+        2. You have two options:
+            - Enter details manually for up to 5 entries in the provided form.
+            - Upload an Excel file (.xlsx or .xls) containing the required fields, such as:
+                - Professors: Name, Password, Permission.
+                - Programs: ProgramName.
+        3. Click "Upload File" or "Add" to save the entries.
+
+  utter_file_format_bulk_upload:
+    - text: |
+        Use an Excel file (.xlsx or .xls) with the following fields for bulk uploads:
+        - Professors: Name, Password, Permission (e.g., Granted or Denied).
+        - Programs: ProgramName.
+        - Students: Fields specific to your requirements (e.g., Name, Program).
+        - Courses: Fields specific to your requirements (e.g., CourseName, Professor).
+        Ensure all required fields are included; otherwise, the system will show an error message.
+
+  utter_customize_permissions:
+    - text: |
+        To customize permissions for professors or users:
+        1. When adding or editing a professor, set the "Permission" field to:
+            - Granted: Full access to system features.
+            - Denied: Limited or no access to certain features.
+        This helps control user privileges.
+
+  utter_handle_invalid_data:
+    - text: |
+        If invalid data is detected during a bulk upload:
+        - An error message will display, specifying the issue (e.g., "Missing required columns" or "File format not supported").
+        - Ensure the file contains all required fields in the correct format and retry.
+
+  utter_admin_dashboard_features:
+    - text: |
+        The admin dashboard is a central hub for managing the system. It allows you to:
+        - Manage professors, students, courses, and programs.
+        - Add or upload data in bulk.
+        - Generate and download detailed reports.
+        - Access your profile and settings.
+  
+  utter_faq_login_student_dashboard:
+    - text: "Use your provided student credentials to log in. If you have trouble logging in, contact your professor or the admin for assistance."
+
+  utter_faq_view_attendance_records:
+    - text: "Once you log in successfully, select the 'Academic Year' and the 'Courses' you want to view, then click on 'Download Report.' This will provide a detailed breakdown of your attendance status for each course."
+
+  utter_faq_attendance_status_meaning:
+    - text: |
+        Attendance statuses mean the following:
+        - Present: You attended the session on time.
+        - Late: You attended but arrived after the accepted delay.
+        - Absent: You did not attend the session.
+
+  utter_faq_verify_attendance_status:
+    - text: "Attendance is updated in real-time during face recognition sessions. You can verify your status in the 'Attendance' section. If there’s a discrepancy, contact your professor."
+
+  utter_faq_update_attendance_status:
+    - text: "Only your professor can manually update your attendance status. Reach out to your professor if you believe there’s an error."
+
+  utter_faq_missing_attendance_records:
+    - text: "Ensure that you are enrolled in the course. If you still can’t see your records, contact your professor or the admin for assistance."
+
+  utter_faq_join_session_late:
+    - text: "If you join within the accepted delay time, you will be marked as 'Present.' If you join after this time, you will be marked as 'Late.'"
+  
+  utter_faq_start_face_recognition:
+    - text: |
+        To start a face recognition session:
+        1. Select a course.
+        2. Input the start time and the accepted delay time.
+        3. Click the "ONSITE" button for onsite capturing or the "ONLINE" button for remote capturing.
+        Ensure your camera permissions are enabled.
+
+  utter_faq_camera_feed_not_showing:
+    - text: |
+        Ensure that you have granted your browser permission to access the camera. 
+        If the problem persists:
+        - Restart your browser.
+        - Check if another application is using the camera.
+
+  utter_faq_face_recognition_process:
+    - text: |
+        During a face recognition session:
+        - The application captures frames from the live camera feed.
+        - It processes them to recognize faces.
+        - Attendance is updated in real time:
+          - "Present" for on-time arrivals.
+          - "Late" for late arrivals.
+          - "Absent" for no-shows.
+
+  utter_faq_stop_face_recognition:
+    - text: |
+        To stop a face recognition session:
+        - Press the "Q" button on your keyboard.
+        This will halt the camera feed and stop capturing frames.
+
+  utter_faq_update_attendance:
+    - text: |
+        Yes, you can manually update a student’s attendance:
+        - Locate the student in the attendance table.
+        - Select a new status (e.g., "Present," "Late," or "Absent") from the dropdown menu.
+
+  utter_faq_view_attendance_reports:
+    - text: |
+        To view attendance reports:
+        - Click on the "View Reports" button in the navigation bar.
+        - You will access detailed attendance reports for the selected course.
+
+  utter_faq_missing_student_name:
+    - text: |
+        If a student’s name is not appearing in the list:
+        - Ensure that the correct course is selected.
+        - If the issue persists, check with the admin to verify that the student is enrolled in the course.
+
+  utter_faq_report_page_purpose:
+    - text: "The Report Page allows professors to view and download detailed attendance reports for selected courses, academic years, and students."
+
+  utter_faq_select_criteria:
+    - text: |
+        To select an academic year, course, and student for a report:
+        1. Use the dropdown menus to choose the academic year, course, and student.
+        2. The page will display attendance logs and statistics for the selected criteria.
+
+  utter_faq_report_information:
+    - text: |
+        The attendance report includes:
+        - Session dates.
+        - Attendance status (e.g., Present, Late, Absent).
+        - Scores for each session.
+        - Statistics such as total sessions, total present, total late, total absent, and overall score.
+
+  utter_faq_download_pdf:
+    - text: |
+        To download a PDF report:
+        1. Select the academic year, course, and student.
+        2. Click the "Download PDF" button.
+        A PDF report will be generated and downloaded to your device.
+
+  utter_faq_view_all_students_report:
+    - text: |
+        Yes, you can view a report for all students in a course:
+        1. Set the "Student" dropdown to "All Students."
+        2. The page will generate a report for every student in the selected course.
+
+  utter_faq_statistics_explanation:
+    - text: |
+        The statistics at the bottom of the page represent:
+        - Sessions: Total number of sessions held.
+        - Present: Number of sessions the student attended on time.
+        - Late: Number of sessions the student attended but arrived late.
+        - Absent: Number of sessions the student missed.
+        - Total Score: Cumulative score based on attendance performance.
+
+
+
+
+session_config:
+  session_expiration_time: 60  # in minutes
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,181 @@
+version: "3.1"
+
+stories:
+  - story: Greet and Suggest
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: question_1
+      - action: utter_suggest_questions
+
+  - story: FAQ - About_service  
+    steps:
+      - intent: faq_about_service
+      - action: utter_faq_about_service
+      - action: utter_suggest_questions
+
+  - story: FAQ - Login Question
+    steps:
+      - intent: faq_login
+      - action: utter_faq_login
+      - action: utter_suggest_questions
+
+  - story: FAQ - Forgot Password Question
+    steps:
+      - intent: faq_forgot_password
+      - action: utter_faq_forgot_password
+      - action: utter_suggest_questions
+
+  - story: FAQ - Roles Question
+    steps:
+      - intent: faq_roles
+      - action: utter_faq_roles
+      - action: utter_suggest_questions
+
+  - story: FAQ - Error During Login Question
+    steps:
+      - intent: faq_error_login
+      - action: utter_faq_error_login
+      - action: utter_suggest_questions
+
+  - story: FAQ - Changing Role Question
+    steps:
+      - intent: faq_change_role
+      - action: utter_faq_change_role
+      - action: utter_suggest_questions
+
+  - story: FAQ - Something Else
+    steps:
+      - intent: faq_something_else
+      - action: utter_something_else
+      - action: utter_suggest_questions
+
+  - story: manage_professors_students_courses_story
+    steps:
+      - intent: manage_professors_students_courses
+      - action: utter_manage_professors_students_courses
+
+  - story: bulk_add_entries_story
+    steps:
+      - intent: bulk_add_entries
+      - action: utter_bulk_add_entries
+
+  - story: file_format_bulk_upload_story
+    steps:
+      - intent: file_format_bulk_upload
+      - action: utter_file_format_bulk_upload
+
+  - story: customize_permissions_story
+    steps:
+      - intent: customize_permissions
+      - action: utter_customize_permissions
+
+  - story: handle_invalid_data_story
+    steps:
+      - intent: handle_invalid_data
+      - action: utter_handle_invalid_data
+
+  - story: admin_dashboard_features_story
+    steps:
+      - intent: admin_dashboard_features
+      - action: utter_admin_dashboard_features
+
+  - story: FAQ - Login to Student Dashboard
+    steps:
+      - intent: faq_login_student_dashboard
+      - action: utter_faq_login_student_dashboard
+
+  - story: FAQ - View Attendance Records
+    steps:
+      - intent: faq_view_attendance_records
+      - action: utter_faq_view_attendance_records
+
+  - story: FAQ - Attendance Status Meaning
+    steps:
+      - intent: faq_attendance_status_meaning
+      - action: utter_faq_attendance_status_meaning
+
+  - story: FAQ - Verify Attendance Status
+    steps:
+      - intent: faq_verify_attendance_status
+      - action: utter_faq_verify_attendance_status
+
+  - story: FAQ - Update Attendance Status
+    steps:
+      - intent: faq_update_attendance_status
+      - action: utter_faq_update_attendance_status
+
+  - story: FAQ - Missing Attendance Records
+    steps:
+      - intent: faq_missing_attendance_records
+      - action: utter_faq_missing_attendance_records
+
+  - story: FAQ - Join Session Late
+    steps:
+      - intent: faq_join_session_late
+      - action: utter_faq_join_session_late
+  
+  - story: FAQ - Start Face Recognition
+    steps:
+      - intent: faq_start_face_recognition
+      - action: utter_faq_start_face_recognition
+
+  - story: FAQ - Camera Feed Not Showing
+    steps:
+      - intent: faq_camera_feed_not_showing
+      - action: utter_faq_camera_feed_not_showing
+
+  - story: FAQ - Face Recognition Process
+    steps:
+      - intent: faq_face_recognition_process
+      - action: utter_faq_face_recognition_process
+
+  - story: FAQ - Stop Face Recognition
+    steps:
+      - intent: faq_stop_face_recognition
+      - action: utter_faq_stop_face_recognition
+
+  - story: FAQ - Update Attendance
+    steps:
+      - intent: faq_update_attendance
+      - action: utter_faq_update_attendance
+
+  - story: FAQ - View Attendance Reports
+    steps:
+      - intent: faq_view_attendance_reports
+      - action: utter_faq_view_attendance_reports
+
+  - story: FAQ - Missing Student Name
+    steps:
+      - intent: faq_missing_student_name
+      - action: utter_faq_missing_student_name
+  
+  - story: FAQ - Report Page Purpose
+    steps:
+      - intent: faq_report_page_purpose
+      - action: utter_faq_report_page_purpose
+
+  - story: FAQ - Select Criteria
+    steps:
+      - intent: faq_select_criteria
+      - action: utter_faq_select_criteria
+
+  - story: FAQ - Report Information
+    steps:
+      - intent: faq_report_information
+      - action: utter_faq_report_information
+
+  - story: FAQ - Download PDF
+    steps:
+      - intent: faq_download_pdf
+      - action: utter_faq_download_pdf
+
+  - story: FAQ - View All Students Report
+    steps:
+      - intent: faq_view_all_students_report
+      - action: utter_faq_view_all_students_report
+
+  - story: FAQ - Statistics Explanation
+    steps:
+      - intent: faq_statistics_explanation
+      - action: utter_faq_statistics_explanation
